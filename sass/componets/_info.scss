@@ -1,0 +1,94 @@
+.project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__info {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 4rem;
+    @include respond(tab-land) {
+      margin: 2.5rem 4rem;
+    }
+    @include respond(smoll) {
+      gap: 3rem;
+      flex-direction: column;
+      align-items: auto;
+    }
+  }
+  &__details {
+    display: grid;
+    flex: 1 1;
+    // gap: 4rem;
+    grid-template-columns: repeat(4, 1fr);
+    @include respond(tab-port) {
+      grid-row: span 2;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    @include respond(smoll) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  &__details-number {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  &__dots {
+    position: relative;
+    &:nth-child(1):after {
+      @include dots;
+    }
+    &:nth-child(2):after {
+      @include dots;
+    }
+    &:nth-child(3):after {
+      @include dots;
+    }
+    @include respond(tab-port) {
+      &:nth-child(4):after {
+        @include dots;
+      }
+    }
+    @include respond(smoll) {
+      &:nth-child(1):after,
+      &:nth-child(2):after,
+      &:nth-child(3):after,
+      &:nth-child(4):after {
+        @include dots;
+        display: none;
+      }
+    }
+  }
+  &__details-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-gray;
+    &:not(:last-child):after {
+      @include dots;
+    }
+    @include respond(smoll) {
+      font-size: 1.2rem;
+    }
+  }
+  &__list-type {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    @include respond(smoll) {
+      width: 100%;
+      justify-content: space-between;
+      p {
+        display: iline-block;
+      }
+    }
+    &-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      --ionicon-stroke-width: 4rem;
+      //   font-size: 9rem;
+    }
+  }
+}

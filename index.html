@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Dashbord</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header__logo">
+                <div class="header__logo-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+                    </svg></div>
+                <p class="header__logo-text">Portfolio</p>
+            </div>
+            <div class="header__search">
+                <form class="header__search-form" action="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+
+                    <input type="text" name="" id="" class="header__search-input" placeholder="Search">
+                </form>
+            </div>
+            <div class="header__user">
+                <div class="header__user-menu">
+                    <div class="header__user-add-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                        </svg>
+                    </div>
+                    <div class="header__user-bell-icon">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__user-profile">
+                    <img src="img/user-1.jpg" class="header__user-img">
+                    <div class="header__user-name">Hira r</div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <nav class="nav">
+                <ul class="nav__navbar">
+                    <li class="nav__item active"><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                            </svg></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z" />
+                            </svg></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M4.5 12a7.5 7.5 0 0015 0m-15 0a7.5 7.5 0 1115 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077l1.41-.513m14.095-5.13l1.41-.513M5.106 17.785l1.15-.964m11.49-9.642l1.149-.964M7.501 19.795l.75-1.3m7.5-12.99l.75-1.3m-6.063 16.658l.26-1.477m2.605-14.772l.26-1.477m0 17.726l-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205L12 12m6.894 5.785l-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864l-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                            </svg></a></li>
+                </ul>
+            </nav>
+            <section class="project">
+                <div class="project__header">
+                    <p>Project</p>
+                    <p>julay, 2020</p>
+                </div>
+                <div class="project__info">
+                    <div class="project__details">
+                        <div class="project__dots">
+                            <p class="project__details-number">45</p>
+                            <p class="project__details-text">Inprogress</p>
+                        </div>
+                        <div class="project__dots">
+                            <p class="project__details-number">12</p>
+                            <p class="project__details-text">In Progress</p>
+                        </div>
+                        <div class="project__dots">
+                            <p class="project__details-number">10</p>
+                            <p class="project__details-text">Upcoming</p>
+                        </div>
+                        <div class="project__dots">
+                            <p class="project__details-number">67</p>
+                            <p class="project__details-text">Total Project</p>
+                        </div>
+                    </div>
+                    <div class="project__list-type">
+                        <p>
+                            <ion-icon class="project__list-type-icon" name="menu-outline"></ion-icon>
+                        </p>
+                        <p>
+                            <ion-icon class="project__list-type-icon" name="grid-outline"></ion-icon>
+                        </p>
+                    </div>
+                </div>
+                <div class="card-sroll">
+                    <div class="cards">
+                        <div class="cards__card cards__card-1">
+                            <div class="cards__top">
+                                <div class="cards__header">
+                                    <p class="cards__date">july 2, 2020</p>
+                                    <p class="cards__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg></p>
+                                </div>
+                                <div class="cards__body">
+                                    <p class="cards__heading-primary">Web Desighn</p>
+                                    <p class="cards__heading-secondary">Prototyping</p>
+                                </div>
+                                <div class="cards__progrss">
+                                    <p class="cards__text">Progress</p>
+                                    <div class="cards__progrss-bar">&nbsp;</div>
+                                    <p class="cards__number">90%</p>
+                                </div>
+                            </div>
+                            <div class="cards__footer">
+                                <div class="cards__footer-user">
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-2.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-3.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-1">2 Days left</a>
+                            </div>
+                        </div>
+                        <div class="cards__card cards__card-2">
+                            <div class="cards__top">
+                                <div class="cards__header">
+                                    <p class="cards__date">july 2, 2020</p>
+                                    <p class="cards__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg></p>
+                                </div>
+                                <div class="cards__body">
+                                    <p class="cards__heading-primary">Mobile app</p>
+                                    <p class="cards__heading-secondary">Shopping</p>
+                                </div>
+                                <div class="cards__progrss">
+                                    <p class="cards__text">Progress</p>
+                                    <div class="cards__progrss-bar">&nbsp;</div>
+                                    <p class="cards__number">30%</p>
+                                </div>
+                            </div>
+                            <div class="cards__footer">
+                                <div class="cards__footer-user">
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-2.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-3.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-2">2 Days left</a>
+                            </div>
+                        </div>
+                        <div class="cards__card cards__card-3">
+                            <div class="cards__top">
+                                <div class="cards__header">
+                                    <p class="cards__date">july 2, 2020</p>
+                                    <p class="cards__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg></p>
+                                </div>
+                                <div class="cards__body">
+                                    <p class="cards__heading-primary">Dashbord</p>
+                                    <p class="cards__heading-secondary">Medical</p>
+                                </div>
+                                <div class="cards__progrss">
+                                    <p class="cards__text">Progress</p>
+                                    <div class="cards__progrss-bar">&nbsp;</div>
+                                    <p class="cards__number">50%</p>
+                                </div>
+                            </div>
+                            <div class="cards__footer">
+                                <div class="cards__footer-user">
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-2.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-3.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-3">2 Days left</a>
+                            </div>
+                        </div>
+                        <div class="cards__card cards__card-4">
+                            <div class="cards__top">
+                                <div class="cards__header">
+                                    <p class="cards__date">july 2, 2020</p>
+                                    <p class="cards__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg></p>
+                                </div>
+                                <div class="cards__body">
+                                    <p class="cards__heading-primary">Web Desighn</p>
+                                    <p class="cards__heading-secondary">Wireframing</p>
+                                </div>
+                                <div class="cards__progrss">
+                                    <p class="cards__text">Progress</p>
+                                    <div class="cards__progrss-bar">&nbsp;</div>
+                                    <p class="cards__number">20%</p>
+                                </div>
+                            </div>
+                            <div class="cards__footer">
+                                <div class="cards__footer-user">
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-2.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-3.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-4">2 Days left</a>
+                            </div>
+                        </div>
+                        <div class="cards__card cards__card-1">
+                            <div class="cards__top">
+                                <div class="cards__header">
+                                    <p class="cards__date">july 2, 2020</p>
+                                    <p class="cards__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg></p>
+                                </div>
+                                <div class="cards__body">
+                                    <p class="cards__heading-primary">Web Desighn</p>
+                                    <p class="cards__heading-secondary">Prototyping</p>
+                                </div>
+                                <div class="cards__progrss">
+                                    <p class="cards__text">Progress</p>
+                                    <div class="cards__progrss-bar">&nbsp;</div>
+                                    <p class="cards__number">90%</p>
+                                </div>
+                            </div>
+                            <div class="cards__footer">
+                                <div class="cards__footer-user">
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-2.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-3.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-1">2 Days left</a>
+                            </div>
+                        </div>
+                        <div class="cards__card cards__card-2">
+                            <div class="cards__top">
+                                <div class="cards__header">
+                                    <p class="cards__date">july 2, 2020</p>
+                                    <p class="cards__icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                                        </svg></p>
+                                </div>
+                                <div class="cards__body">
+                                    <p class="cards__heading-primary">Mobile app</p>
+                                    <p class="cards__heading-secondary">Shopping</p>
+                                </div>
+                                <div class="cards__progrss">
+                                    <p class="cards__text">Progress</p>
+                                    <div class="cards__progrss-bar">&nbsp;</div>
+                                    <p class="cards__number">30%</p>
+                                </div>
+                            </div>
+                            <div class="cards__footer">
+                                <div class="cards__footer-user">
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-2.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <img src="img/user-3.jpg" alt="">
+                                    </div>
+                                    <div class="cards__footer-user-img">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m9-9H3" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-2">2 Days left</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="client">
+                <div class="client__header">
+                    <div class="client__title">
+                        <p>Client Message</p>
+                    </div>
+                    <div class="client__icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="client__box">
+                    <div class="client__msg-box">
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-3.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">Stephanie</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-5.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">William</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-7.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">Alona</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-8.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">Angel</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                        <div class="client__msg">
+                            <div class="client__img">
+                                <img src="img/user-4.jpg" alt="">
+                            </div>
+                            <div class="client__info">
+                                <div class="client__msg-heading">
+                                    <p class="client__name">David</p>
+                                    <p class="client__star"><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                            class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                                        </svg></p>
+                                </div>
+                                <p class="client__msg-text">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae, sunt.
+                                </p>
+                                <p class="client__msg-time">21 july</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

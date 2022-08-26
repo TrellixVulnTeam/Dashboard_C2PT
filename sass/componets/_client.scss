@@ -1,0 +1,92 @@
+.client {
+  display: flex;
+  flex-direction: column;
+  &__header {
+    padding: 4rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-black-light;
+  }
+  &__box {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    &::-webkit-scrollbar {
+      width: 1px;
+      background-color: transparent;
+    }
+  }
+  &__msg-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  //   msg
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      height: 5rem;
+      width: 5rem;
+      border-radius: 50%;
+    }
+  }
+  &__msg {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: auto 1fr;
+    padding: 1rem 4rem;
+    transition: all 0.4s;
+    &:not(:first-child) {
+      border-top: 1px solid rgba($color-black-light, 0.2);
+    }
+    &:hover {
+      background-color: white;
+      transform: scale(1);
+    }
+  }
+  &__msg-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  &__name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $color-black-light;
+  }
+  &__star {
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  &__msg-text {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  &__msg-time {
+    font-size: 1.2rem;
+    color: $color-gray;
+    text-align: right;
+  }
+}

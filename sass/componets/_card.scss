@@ -1,0 +1,169 @@
+.cards {
+  position: absolute;
+  width: 100%;
+  padding: 4rem 4rem 0 4rem;
+  height: auto;
+  display: grid;
+  gap: 6rem;
+  grid-template-columns: 1fr 1fr;
+
+  @include respond(tab-port) {
+    gap: 2rem;
+  }
+  @include respond(smoll) {
+    grid-template-columns: 1fr;
+  }
+  // cards  header
+  &__top {
+    border-bottom: 1px solid $color-white;
+    padding: 2rem;
+    padding-bottom: 0.5rem;
+  }
+  &__date {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: $color-black-light;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__card {
+    border-radius: 3rem;
+    box-shadow: 0 0 12px rgba($color-black-light, 0.1);
+  }
+  &__icon {
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  &__card-1 {
+    background-color: $color-blue-light;
+    .cards__top {
+      border-bottom: 1px solid $color-gray;
+    }
+  }
+  &__card-2 {
+    background-color: $color-orangered-light;
+  }
+  &__card-3 {
+    background-color: $color-green-light;
+  }
+  &__card-4 {
+    background-color: $color-pink-light;
+  }
+
+  //   cards__body
+
+  &__body {
+    padding: 2rem;
+  }
+  &__heading-primary {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  &__heading-secondary {
+    text-align: center;
+    color: $color-black-light;
+    font-size: 1.4rem;
+  }
+
+  //   cards__progrss
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  &__number {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: right;
+  }
+
+  // progress
+  &__card-1 &__progrss-bar {
+    @include progress {
+      background-color: rgba($color-gray, 0.5);
+      &:after {
+        background-color: $color-blue;
+        width: 90%;
+      }
+    }
+  }
+  &__card-2 &__progrss-bar {
+    @include progress {
+      &:after {
+        background-color: $color-orangered;
+        width: 30%;
+      }
+    }
+  }
+  &__card-3 &__progrss-bar {
+    @include progress {
+      &:after {
+        background-color: $color-green;
+        width: 50%;
+      }
+    }
+  }
+  &__card-4 &__progrss-bar {
+    @include progress {
+      &:after {
+        background-color: $color-pink;
+        width: 20%;
+      }
+    }
+  }
+
+  //   card user
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include footer;
+    @include respond(tab-port) {
+      @include footer {
+        margin-left: 0;
+      }
+    }
+  }
+  &__card-1 &__footer {
+    @include footer {
+      &-user-img {
+        &:nth-child(3) {
+          background-color: $color-blue;
+        }
+      }
+    }
+  }
+  &__card-2 &__footer {
+    @include footer {
+      &-user-img {
+        &:nth-child(3) {
+          background-color: $color-orangered;
+        }
+      }
+    }
+  }
+  &__card-3 &__footer {
+    @include footer {
+      &-user-img {
+        &:nth-child(3) {
+          background-color: $color-green;
+        }
+      }
+    }
+  }
+  &__card-4 &__footer {
+    @include footer {
+      &-user-img {
+        &:nth-child(3) {
+          background-color: $color-pink;
+        }
+      }
+    }
+  }
+}

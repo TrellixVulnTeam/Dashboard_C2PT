@@ -1,0 +1,65 @@
+.nav {
+  padding: 3rem 2.5rem;
+  @include respond(tab-land) {
+    grid-row: span 2;
+    padding: 3rem 2rem 3rem 1rem;
+  }
+  @include respond(tab-port) {
+    grid-row: span 1;
+  }
+  @include respond(smoll) {
+    padding: 2rem;
+    padding-bottom: 3rem;
+  }
+  &__navbar {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include respond(tab-port) {
+      flex-direction: row;
+    }
+    @include respond(tab-port) {
+      justify-content: space-around;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 6.8rem;
+    transition: all 0.4s;
+    border-radius: 50%;
+    @include respond(smoll) {
+      width: 5rem;
+      height: 5rem;
+    }
+    &:hover {
+      background-color: $color-black;
+      svg {
+        color: $color-white;
+      }
+    }
+  }
+  .active {
+    background-color: $color-black;
+    svg {
+      color: $color-white;
+    }
+    border-radius: 50%;
+  }
+  &__link:link,
+  &__link:visited {
+    color: $color-gray;
+    text-decoration: none;
+    svg {
+      width: 3.5rem;
+      height: 3.5rem;
+      @include respond(smoll) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+}
